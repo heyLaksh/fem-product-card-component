@@ -4,13 +4,40 @@ body {
     background-color: hsl(30, 38%, 92%);
 }
 
+h1 {
+    font-family: "Fraunces", serif;
+}
+
 .container {
-    width: 600px;
-    height: 450px;
     position: absolute;
+    height: 450px;
+    width: 600px;
+    background-color: hsl(0, 0%, 100%);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: hsl(0, 0%, 100%);
 }
 
+div {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    display: initial;
+    padding: 35px;
+    width: 50%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.attribution {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0%;
+    text-decoration: none;
+}
