@@ -40,6 +40,18 @@ div {
     width: 50%;
 }
 
+img {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
 .right {
     display: initial;
     padding: 35px 32px 32px 32px;
@@ -78,10 +90,74 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: hsl(147, 50%, 17%);
+}
+
 .material-symbols-outlined {
     color: hsl(0, 0%, 100%);
     font-size: 18px;
     padding-right: 7px;
     display: inline-flex;
     vertical-align: top;
+}
+
+@media screen and (max-width: 375px) {
+    div {
+        flex-direction: column;
+    }
+
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 8px;
+    }
+
+    .container {
+        height: 611px;
+        width: 343px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        display: block;
+        width: 295px;
+        padding: 24px;
+    }
+
+    h1 {
+        margin-top: 0px;
+        margin-bottom: 16px;
+    }
+
+    .para {
+        line-height: 21px;
+    }
+    p {
+        font-size: 14px;
+    }
+
+    .tag {
+        display: flex;
+        flex-direction: row;
+    }
+    #price {
+        width: 50%;
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
+
+    s {
+        flex-grow: 1;
+    }
+
+    button {
+        width: 295px;
+    }
 }
