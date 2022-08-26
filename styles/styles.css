@@ -1,11 +1,16 @@
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
 body {
+    padding: 0px;
+    margin: 0px;
     background-color: hsl(30, 38%, 92%);
 }
+
+.container {
+    width: 600px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(0, 0%, 100%);
+}
+
