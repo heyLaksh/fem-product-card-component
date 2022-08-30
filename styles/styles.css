@@ -103,7 +103,7 @@ button:hover {
     vertical-align: top;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
     div {
         flex-direction: column;
     }
